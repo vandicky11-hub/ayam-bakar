@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayam Bakar Nusantara — Lezat & Tradisional</title>
+  <meta name="description" content="Resep, menu, dan cerita di balik Ayam Bakar khas Nusantara. Resep praktis, tips marinasi, dan cara penyajian." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{
+      --accent:#d95f13; /* warm orange */
+      --bg:#fff7f0;
+      --card:#ffffff;
+      --muted:#6b6b6b;
+      --maxw:1100px;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#222}
+    .container{max-width:var(--maxw);margin:0 auto;padding:24px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav{display:flex;gap:18px}
+    nav a{color:inherit;text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:28px 0}
+    .hero-inner{background:var(--card);border-radius:18px;padding:22px;display:flex;gap:24px;align-items:center;box-shadow:0 6px 24px rgba(0,0,0,0.06)}
+    .hero-text h1{margin:0;font-size:28px}
+    .hero-text p{color:var(--muted);margin-top:8px}
+    .hero-img{width:260px;height:160px;border-radius:12px;overflow:hidden;flex-shrink:0}
+    .hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* Sections */
+    section{margin:28px 0;padding:18px;border-radius:12px}
+    .card{background:var(--card);box-shadow:0 6px 20px rgba(15,15,15,0.04);padding:18px;border-radius:12px}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .menu-item{display:flex;gap:12px;align-items:center}
+    .menu-item img{width:84px;height:64px;border-radius:8px;object-fit:cover}
+    .menu-item h4{margin:0}
+
+    .recipe ul{margin:0 0 12px 20px}
+    .steps ol{margin:0 0 12px 18px}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+
+    /* Footer */
+    footer{padding:20px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    /* Responsive */
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .hero-inner{flex-direction:column}
+      .hero-img{width:100%;height:220px}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AB</div>
+        <div>
+          <div style="font-weight:800">Ayam Bakar Nusantara</div>
+          <div style="font-size:12px;color:var(--muted)">Lezat. Tradisional. Mudah dibuat.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#resep">Resep</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#kontak" class="cta">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h1>Ayam Bakar Kecap & Bumbu Kuning — Resep Rumahan</h1>
+            <p>Perpaduan kecap manis, bumbu rempah, dan arang — resep simpel untuk ayam bakar yang gurih dan berwarna kecokelatan sempurna.</p>
+            <p style="margin-top:12px"><strong>Persiapan:</strong> 15 menit • <strong>Memasak:</strong> 30–40 menit • <strong>Porsi:</strong> 4 orang</p>
+            <p style="margin-top:12px"><a href="#resep" class="cta">Lihat Resep Lengkap</a></p>
+          </div>
+          <div class="hero-img">
+            <img alt="Ayam Bakar" src="https://images.unsplash.com/photo-1604908177076-88c58b8a0fb8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="card">
+        <h2>Tentang Ayam Bakar</h2>
+        <p class="muted">Ayam bakar adalah salah satu hidangan populer di Indonesia — tiap daerah punya gaya masing-masing. Di situs ini kita fokus pada resep praktis yang bisa dibuat di rumah tanpa peralatan khusus.</p>
+      </section>
+
+      <section id="menu" class="card">
+        <h2>Menu Populer</h2>
+        <div class="grid">
+          <div class="menu-item">
+            <img alt="Ayam Bakar Kecap" src="https://images.unsplash.com/photo-1608131621914-8b0b6a5f6b1d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+            <div>
+              <h4>Ayam Bakar Kecap</h4>
+              <div style="color:var(--muted);font-size:13px">Manis, gurih, cocok untuk nasi hangat.</div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img alt="Ayam Bakar Taliwang" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+            <div>
+              <h4>Ayam Bakar Taliwang</h4>
+              <div style="color:var(--muted);font-size:13px">Pedas dan berempah khas Lombok.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resep" class="card recipe">
+        <h2>Resep: Ayam Bakar Kecap (4 porsi)</h2>
+        <h3>Bahan-bahan</h3>
+        <ul>
+          <li>1 ekor ayam, potong menjadi 8 bagian</li>
+          <li>4 siung bawang putih</li>
+          <li>6 siung bawang merah</li>
+          <li>2 cm jahe</li>
+          <li>2 sdm kecap manis</li>
+          <li>1 sdm kecap asin atau saus tiram</li>
+          <li>1 sdt garam, 1/2 sdt merica</li>
+          <li>2 sdm minyak untuk menumis</li>
+          <li>Air secukupnya untuk merebus</li>
+        </ul>
+
+        <h3>Langkah</h3>
+        <div class="steps">
+          <ol>
+            <li>Tumis bawang putih, bawang merah, dan jahe sampai harum. Angkat dan haluskan (bisa blender).</li>
+            <li>Marinasi ayam dengan bumbu halus, kecap manis, kecap asin, garam, dan merica. Diamkan minimal 30 menit (lebih lama lebih meresap).</li>
+            <li>Panaskan sedikit minyak, tumis sisa bumbu sampai matang, lalu tambahkan air sedikit untuk membuat saus. Masak sampai kental.</li>
+            <li>Panggang ayam di atas panggangan/oven/teflon sambil diolesi saus sampai matang dan kecokelatan (±30 menit, bolak-balik dan olesi).</li>
+            <li>Sajikan dengan sambal terasi, lalapan, dan nasi hangat.</li>
+          </ol>
+        </div>
+        <p style="color:var(--muted)"><strong>Tip:</strong> Untuk aroma bakaran, rekatkan sedikit arang panas pada aluminium foil dekat ayam (hati-hati).</p>
+      </section>
+
+      <section id="galeri" class="card">
+        <h2>Galeri</h2>
+        <div class="gallery">
+          <img alt="galeri1" src="https://images.unsplash.com/photo-1542444459-db3c1b4a7b6f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+          <img alt="galeri2" src="https://images.unsplash.com/photo-1604908177076-88c58b8a0fb8?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+          <img alt="galeri3" src="https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" />
+        </div>
+      </section>
+
+      <section id="kontak" class="card">
+        <h2>Kontak & Pesan</h2>
+        <p>Ingin resep lain, tips memasak, atau memesan untuk acara? Isi form sederhana di bawah (tidak tersambung otomatis — gunakan alamat email Anda untuk menerima pesan).</p>
+        <form onsubmit="alert('Form tidak terhubung — ini contoh.');return false;" style="display:grid;gap:8px;max-width:600px">
+          <input placeholder="Nama" style="padding:12px;border-radius:8px;border:1px solid #eee" required />
+          <input type="email" placeholder="Email" style="padding:12px;border-radius:8px;border:1px solid #eee" required />
+          <textarea placeholder="Pesan" rows="4" style="padding:12px;border-radius:8px;border:1px solid #eee"></textarea>
+          <button class="cta" type="submit" style="width:140px">Kirim Pesan</button>
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© "Ayam Bakar Nusantara" — Dibuat dengan ❤️ • Template sederhana untuk demo</div>
+    </footer>
+  </div>
+
+  <script>
+    // smooth scroll for the page links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',function(e){
+        const href=this.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    })
+  </script>
+</body>
+</html>
